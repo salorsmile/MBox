@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main">#FF31C27C</color>
+    <color name="main_dark">#FF535353</color>
+    <color name="my_music_backgroud">#3431C27C</color>
+</resources>

@@ -1,0 +1,126 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="salorsmile.lzh.fragment.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rl_top">
+            <LinearLayout
+                android:id="@+id/ll_search_btn_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_btn_bg"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/tv_search_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/search_drawable_left"
+                    android:text="搜索"
+                    android:textColor="#FF666666" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_search_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/search_btn_bg"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/search"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="搜索"
+                    android:padding="2dp"
+                    android:textColor="#FF666666" />
+
+                <ImageButton
+                    android:id="@+id/searchBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:padding="0dp"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/search_drawable_left"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+
+
+            <!--<EditText-->
+            <!--android:id="@+id/search"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_toLeftOf="@+id/searchBtn"-->
+            <!--android:layout_toStartOf="@+id/searchBtn"-->
+            <!--android:hint="输入搜索内容" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/searchBtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:text="搜索" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史记录"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/delete1"
+                />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/historyList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_middle"></ListView>
+
+        <ListView
+            android:id="@+id/musicResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_middle"
+            android:visibility="gone"></ListView>
+    </RelativeLayout>
+
+</FrameLayout>
