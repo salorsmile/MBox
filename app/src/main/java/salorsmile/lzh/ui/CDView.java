@@ -39,6 +39,7 @@ public class CDView extends View {
 
 	public CDView(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
+
 		mCircleBitmap = BitmapFactory.decodeResource(getResources(),
 				R.mipmap.cd_center);
 		mMatrix = new Matrix();
